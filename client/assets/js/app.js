@@ -4,24 +4,37 @@ antApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, 
     $urlRouterProvider.otherwise("/login")
      
     $stateProvider
+        // login
+        .state('login', {
+            url: "/login",
+            templateUrl: "views/login.html",
+            controller: "loginController"
+        })
+        // register
+        .state('register', {
+            url: "/register",
+            templateUrl: "views/register.html",
+            controller: "regController"
+        })
+        // note routes
         .state('view_note', {
             url: "/view_note",
-            templateUrl: "views/view_note.html"
-        })
-        .state('view_photo', {
-            url: "/view_photo",
-            templateUrl: "views/view_photo.html"
+            templateUrl: "views/view_note.html",
+            controller: "noteController"
         })
         .state('add_note', {
             url: "/add_note",
-            templateUrl: "views/add_note.html"
+            templateUrl: "views/add_note.html",
+            controller: "noteController"
         })
-        .state('login', {
-            url: "/login",
-            templateUrl: "views/login.html"
+
+        // photo routes
+        .state('view_photo', {
+            url: "/view_photo",
+            templateUrl: "views/view_photo.html",
+            controller: "photoController"
         })
-        .state('register', {
-            url: "/register",
-            templateUrl: "views/register.html"
-        })
+        
+        
+        
 }]);

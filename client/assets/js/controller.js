@@ -1,16 +1,14 @@
 angular.module("antApp.controllers", [])
-.controller("view_note_ctrl", function($scope, $rootScope){
-	
-})
-.controller("view_photo_ctrl", function($scope, $rootScope){
-	
-})
-.controller("add_note_ctrl", function($scope, $rootScope){
-	
-})
-.controller("login_ctrl", function($scope, $rootScope){
-	
-})
-.controller("register_trl", function($scope, $rootScope){
 
-});
+.controller('loginController', function($scope, $rootScope){
+
+})
+.controller('noteController', function($scope, $rootScope){
+
+})
+.controller('regController', function($scope, $rootScope){
+
+})
+.controller('photoController', function($scope, $rootScope){
+	
+})
