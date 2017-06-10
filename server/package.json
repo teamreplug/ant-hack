@@ -1,0 +1,16 @@
+{
+  "name": "note-api",
+  "version": "1.0.0",
+  "description": "fire fuse api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ant-hack",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.28"
+  }
+}

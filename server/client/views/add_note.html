@@ -1,0 +1,40 @@
+<div class="big-section" style="background-image: url('/assets/img/note.jpeg');">
+	<button class="btn btn-sm btn-unique" style="float: right;" ui-sref="login">
+		Logout
+	</button>
+	<div class="row flex-column flex-center justify-content-center">
+	    <div class="col-lg-6 left-side">
+	      <form class="animated zoomIn" ng-submit="addNote(note)">
+	      	
+	      	<div class="card login-form">
+	      		<h1 align="center">New Note</h1>
+	      		<div class="flex-center flex-column" ng-show="showloader">
+		      		<img src="/assets/img/91.svg">
+		      	</div>
+	      		<div class="md-form" ng-hide="showloader">
+				    <i class="fa fa-envelope prefix"></i>
+				    <input type="text" id="form2" class="form-control" ng-model="note.title">
+				    <label for="form2">Title</label>
+				</div>
+
+				<div class="md-form" ng-hide="showloader">
+				    <i class="fa fa-envelope prefix"></i>
+				    <input type="text" id="form2" class="form-control" ng-model="note.subject">
+				    <label for="form2">Subject</label>
+				</div>
+
+				 <div class="md-form" style="margin: 4%" ng-hide="showloader">
+	                <textarea type="text" id="form76" class="md-textarea" ng-model="note.content"></textarea>
+	                <label for="form76">Body</label>
+	            </div>
+
+				<div align="center" ng-hide="showloader">
+					<button type="submit" class="btn btn-unique btn-md animated rollIn">Add</button>
+				</div>
+	      	</div>
+	      </form>
+	    	
+
+	    </div>
+	  </div>
+</div>
