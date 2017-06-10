@@ -13,24 +13,6 @@ body{
     height:600px;
 }
 
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
- background-color:#000014;
-
-}
-
-.theme-showcase > p > .btn {
-  margin: 5px 0;
-}
-
-.theme-showcase .navbar .container {
-  width: auto;
- background-color:#000014;
-
-}
-
 h1{
 	margin-left: 400px;
 	color: white;
@@ -38,140 +20,60 @@ h1{
   margin-top: 100px;
 }
 
-.navbar-inverse {
-    color: #0080ff;
-    border-color: #0080ff;
-    }
 
-    .navbar-fixed-top{
+.navbar-fixed-top{
 
     background-color: #0080ff;
     border-color: #0080ff;	
 
     }
+.centered-form{
+  margin-top: 60px;
+}
 
-    .navbar-inverse {
-   background-image: linear-gradient(to bottom,#3c3c3c 0,#fffff 100%);
-   background-color: #0080ff;
+.centered-form .panel{
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+label.label-floatlabel {
+    font-weight: bold;
+    color: #46b8da;
+    font-size: 11px;
+}
+
+.panel.panel-default{
+  height: 300px; 
+  width: 500px;
+  margin-left: -100px;
+  margin-top: 100px;
+}
+
+input.btn.btn-info.btn-block{
+  
+  width: 20%;
+  margin-left: 180px;
+  margin-top: 40px;
+}
+
+
+
+
+
+h3{
+  text-align: center;
+  font-family: Helvetica Neue;
+  color: #340034;
 }
 .container-gallery {
     width: 550px;
     margin-left: 400px;
-    opacity: 0.9;
-    box-shadow: 5px 5px 5px #000000;
     background-color: #0d0d0d;
   
-}
-/* layout.css Style */
-.upload-drop-zone {
-  height: 200px;
-  border-width: 2px;
-  margin-bottom: 20px;
-}
-
-/* skin.css Style*/
-.upload-drop-zone {
-  color: #ccc;
-  border-style: dashed;
-  border-color: #ccc;
-  line-height: 200px;
-  text-align: center
-}
-.upload-drop-zone.drop {
-  color: #222;
-  border-color: #222;
-}
-
-.panel-heading{
-  background-color: #1f1f1f;
-
-}
-.panel-default>.panel-heading {
-    color: #592C82;
-    background-color: #fffdd0;
-    border-color:#592C82;
-    text-align: center;
-    font-family: Helvetica Neue;
-   
-}
-.panel.panel-default{
-   background-color: #eeeeee;
-   
-}
-.content{
-
-
-}
-
-h4{
-   text-align: center;
-    font-family: Helvetica Neue;
-    color: #340034;
-}
-
-textarea{
-  height: 200px; 
-  width: 450px;
-  margin-left: 30px;
-}
-.btn.btn-sm.btn-primary{
-color: #340034;
-
-}
-
-
-.card{
-   height: 420px; 
-  width: 350px;
-  background-color:#020202; 
-    box-shadow: 5px 5px 5px #000000;
-    opacity: 0.35;
-
-}
-
-.container-login{
-margin-left: 500px;
-border-color:#eeeeee; 
-}
-
-.form-group-user{
-  width: 65%;
-  margin-left:50px;
-  margin-top: 30px;
-  color: white;
-  font-family: Helvetica Neue;
-  border-color: blue;
-}
-.form-group-pwd{
-  width: 65%;
-  margin-left:50px;
-  margin-top: 20px;
-  color: white;
-  font-family: Helvetica Neue;
-  
-}
-
-.btn.btn-success{
-  margin-left: 240px;
-  color: blue;
-   margin-top: 30px;
-
-}
-.register{
-
-   margin-left: 20px;
-}
-
-h5{
-  margin-left: 100px;
-}
-.card-img-top{
- margin-left: 150px;
- height: 100px; 
-  width: 100px;
-  margin-top:10px;
 }
 
 .nav.navbar-nav{
   margin-left: -250px;
 }
+
+
