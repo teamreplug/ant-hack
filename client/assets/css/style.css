@@ -1,2 +1,46 @@
 /*Ant Hack Custom Css*/
 /*Author Ant Hack*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), 
+       local('Roboto-Regular'), 
+       url(http://fonts.googleapis.com/css?family=Roboto:400,100,‌​100italic,300,300ita‌​lic,400italic,500,50‌​0italic,700,700itali‌​c,900italic,900) 
+}
+html body {
+	font-family: 'Roboto';
+}
+.big-section {
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	/*padding: 100px;*/
+}
+.photo-view {
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	/*padding: 100px;*/
+}
+.photo{
+	margin-bottom: 20px;
+	max-height: 300px ! important;
+}
+.heg{
+	height: 300px;
+}
+.left-side{
+	margin: 5%;
+}
+.left-side-text{
+	color: navy;
+	font-size: 40px;
+}
+.right-side{
+	margin:7%;
+}
+.login-form {
+	padding: 20px;
+	background-color: rgba(255,255,255,0.79);
+}
