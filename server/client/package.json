@@ -1,0 +1,15 @@
+{
+  "name": "ant-hack",
+  "version": "1.0.1",
+  "description": "Replug Fire Fuse Hackathon",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teamreplug/ant-hack/client"
+  },
+  "author": "Ant Hack",
+  "license": "MIT"
+}
