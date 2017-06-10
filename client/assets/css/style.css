@@ -44,3 +44,9 @@ html body {
 	padding: 20px;
 	background-color: rgba(255,255,255,0.79);
 }
+
+.card-block{
+text-align: center;
+font-weight: bold;
+font-family :Helvetica Neue; 
+}
