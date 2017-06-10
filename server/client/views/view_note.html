@@ -1,0 +1,37 @@
+<div class="photo-view" style="background-image: url('/assets/img/note.jpeg');">
+	<button class="btn btn-sm btn-unique" style="float: right;" ui-sref="login">
+		Logout
+	</button>
+	<div class="row " ng-show="!isNote()">
+		<div style="margin: 20%; font-size: 40px; color: white">
+			<h2> No Notes Saved ! <img src="/assets/img/91.svg"></h2>
+			
+		</div>
+		
+	</div>
+	<div class="row" style="padding-top: 4%;" ng-show="isNote()">
+		<div class="col-lg-3 card note" ng-repeat="note in allNotes" ng-class-odd="'yell'" ng-class-even="'blu'">
+			<div class="note-header">
+				<button type="button" style="float: right;" class="btn btn-unique btn-sm right" ng-show="isAdmin()" ng-click="deleteNote(note._id)">
+					Delete
+				</button>
+				<h4 class="note-title">{{note.title}}</h4>
+			</div>
+			<div  class="flex-center flex-column" ng-show="isReveal(note._id)">
+				<img src="/assets/img/91.svg">
+			</div>
+			<div class="note-body" ng-hide="isReveal(note._id)">
+				<h6 class="note-subject">{{note.subject}}</h6>
+				<p>
+					{{note.content}}
+				</p>
+
+			</div>
+			<div class="note-footer" align="right">
+				<h6>
+					by {{note.added_by}} On {{note.date_added | date}}
+				</h6>
+			</div>
+		</div>
+	</div>
+</div>
