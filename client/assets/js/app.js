@@ -1,6 +1,6 @@
-var antApp = angular.module('antApp', ['antApp.controllers', 'ui.router'])
+var antApp = angular.module('antApp', ['antApp.controllers', 'ui.router', 'ngStorage'])
 
-antApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+antApp.config(['$stateProvider', '$urlRouterProvider', '$localStorageProvider', function($stateProvider, $urlRouterProvider, $localStorageProvider){
     $urlRouterProvider.otherwise("/login")
      
     $stateProvider
@@ -35,6 +35,6 @@ antApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, 
             controller: "photoController"
         })
         
-        
+        $localStorageProvider.setKeyPrefix('ant-hack-');
         
 }]);

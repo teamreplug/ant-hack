@@ -1,178 +1,26 @@
-<div class="photo-view" style="background-image: url('/assets/img/camera.jpeg');">
-	<div class="row" style="padding: 5%">
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/2.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/3.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/5.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>
-			    </div>
-			    <!--/.Card content-->
-			</div>
+<div class="photo-view" style="background-image: url('/assets/img/banner2.jpeg');">
+	<div class="row " ng-show="!isPhotos()">
+		<div style="margin: 20%; font-size: 40px; color: white">
+			<h2> Loading ... <img src="/assets/img/91.svg"></h2>
 		</div>
 	</div>
-	<div class="row" style="padding: 5%">
-		<div class="col-lg-4 heg">
+	<div class="row" style="padding: 5%" ng-show="isPhotos()">
+		<div class="col-lg-4 heg" ng-repeat="photo in allPhotos">
 			<div class="card photo">
 			    <!--Card image-->
-			    <img class="" src="assets/img/7.jpg" width="400px" height="200px" alt="Card image cap">
+			   
+			    <img class="" src="{{photo.urls.full}}" width="400px" height="200px" alt="Card image cap">
 			    <!--/.Card image-->
 
 			    <!--Card content-->
 			    <div class="card-block">
 			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			 
+			        <h4 class="card-title">by {{photo.user.name}} - {{photo.likes}} Likes</h4>
+			        <h4 class="card-title"></h4>
 			    </div>
 			    <!--/.Card content-->
 			</div>
 		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/8.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/o.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-	</div>
-    <div class="row" style="padding: 5%">
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/3.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/2.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/b.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-	</div>	
-	<div class="row" style="padding: 5%">
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/l.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/k.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
-		<div class="col-lg-4 heg">
-			<div class="card photo">
-			    <!--Card image-->
-			    <img class="" src="assets/img/t.jpg" width="400px" height="200px" alt="Card image cap">
-			    <!--/.Card image-->
-
-			    <!--Card content-->
-			    <div class="card-block">
-			        <!--Title-->
-			        <h4 class="card-title">Card title</h4>			        
-			    </div>
-			    <!--/.Card content-->
-			</div>
-		</div>
+		
 	</div>	
 </div>
